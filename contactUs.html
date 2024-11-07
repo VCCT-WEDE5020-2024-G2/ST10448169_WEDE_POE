@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Contact Us - Ecolight Green</title>
+        <meta name="description" content="Get in touch with Ecolight Green for any inquiries about our sustainable energy solutions.">
+        <meta name="keywords" content="Ecolight, Contact Us, Sustainable Energy, Renewable Energy, Green Energy">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js" defer></script>
     </head>
     <body>
         <nav>
@@ -30,17 +32,24 @@
         <div class="content contentContactUs">
             <div class="contactForm">
                 <h2>Contact Us</h2>
-                <form action="">
+                <form id="contact-form">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
+
+            <!-- Google Form Integration -->
+            <div class="newsletterSignup">
+                <h2>Subscribe to Our Newsletter</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhzcFlbeJ1x0EcTZY5eqxk9zCSsxNqcHhH-IOHfKNia44atg/viewform?embedded=true" width="640" height="425" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </div>
+
         <footer>
             <div class="footerContent">
                 <div class="footerLogo">
@@ -60,9 +69,24 @@
                     <p>123 Green Energy Way</p>
                     <p>Renewable City, RE 12345</p>
                     <p>Phone: 123-456-7890</p>
-                    <p>Email:</p>
+                    <p>Email: contact@ecolightgreen.com</p>
                 </div>
+                <div class="newsletterSignup">
+                    <button id="openNewsletterModal">Subscribe to Our Newsletter</button>
+                </div>
+            </div>
         </footer>
-        <script src="" async defer></script>
+
+        <!-- Modal for Google Form -->
+        <div id="newsletterModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeNewsletterModal">&times;</span>
+                <h2>Subscribe to Our Newsletter</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhzcFlbeJ1x0EcTZY5eqxk9zCSsxNqcHhH-IOHfKNia44atg/viewform?embedded=true" width="640" height="425" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+
+        <!-- Reference to the JavaScript file -->
+        
     </body>
 </html>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Ecolight Green</title>
-        <meta name="description" content="">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ecolight Green - Driving global sustainable energy solutions">
+        <meta name="keywords" content="Ecolight, Sustainable Energy, Renewable Energy, Green Energy">
+        <title>Ecolight Green</title>
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js" defer></script>
     </head>
     <body>
         <nav>
             <div class="logo">
-                <a href="./index.html">
+                <a href="index.html">
                     <img src="_images/iconlogo.png" alt="logo">
                     <h1>Ecolight</h1>
                 </a>
@@ -91,6 +94,7 @@
                 </div>
             </div>
         </div>
+
         <footer>
             <div class="footerContent">
                 <div class="footerLogo">
@@ -100,7 +104,7 @@
                     <ul>
                         <li><a href="aboutUs.html">About</a></li>
                         <li><a href="news.html">News</a></li>
-                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="products.html">Products</a></li>
                         <li><a href="contactUs.html">Contact Us</a></li>
                         <li><a href="donate.html">Donate</a></li>
                     </ul>
@@ -110,13 +114,24 @@
                     <p>123 Green Energy Way</p>
                     <p>Renewable City, RE 12345</p>
                     <p>Phone: 123-456-7890</p>
-                    <p>Email:</p>
+                    <p>Email: contact@ecolightgreen.com</p>
                 </div>
+
+                <div class="newsletterSignup">
+                    <button id="openNewsletterModal">Subscribe to Our Newsletter</button>
+                </div>
+            </div>
         </footer>
-        <script>
-            function toggleDropdown() {
-                document.querySelector('.dropdown').classList.toggle('show');
-            }
-        </script>
+
+        <!-- Modal for Google Form -->
+        <div id="newsletterModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeNewsletterModal">&times;</span>
+                <h2>Subscribe to Our Newsletter</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhzcFlbeJ1x0EcTZY5eqxk9zCSsxNqcHhH-IOHfKNia44atg/viewform?embedded=true" width="640" height="425" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+
+ 
     </body>
 </html>
